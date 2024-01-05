@@ -1,0 +1,25 @@
+<header>
+  <div class="logo">
+    <h1>FHJ</h1>
+  </div>
+  <span class="fas fa-bars" id="menuIcon" (click)="toggle()"></span>
+  <div class="navbar" [ngClass]="{ active: isNavActive }">
+    <ul>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Skills</a>
+      </li>
+      <li>
+        <a href="#">Projects</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="#" id="resume">Resume</a>
+      </li>
+    </ul>
+  </div>
+</header>
