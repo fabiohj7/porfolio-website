@@ -1,0 +1,36 @@
+.home {
+  background-image: url("../../assets/bolivia.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.image img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 50%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.description {
+  text-align: center;
+  color: white;
+}
+
+.description h1 {
+  font-size: 60px;
+  font-family: "source-code-pro";
+  margin-bottom: 0px;
+  margin-top: 80px;
+}
+
+.description h3 {
+  margin-top: 0px;
+}
