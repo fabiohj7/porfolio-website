@@ -1,0 +1,31 @@
+.skills {
+  justify-content: center;
+}
+
+.items {
+  display: flex;
+  overflow-x: auto;
+  max-width: 70%;
+  max-height: 700px;
+  border: 1px solid #ddd;
+  justify-content: space-evenly;
+}
+
+.items::-webkit-scrollbar {
+  width: 0;
+}
+
+.items img {
+  max-height: 70%;
+  max-width: 70%;
+  border-radius: 50%;
+}
+
+.items .item {
+  min-width: 210px;
+  height: 400px;
+  line-height: 110px;
+  text-align: center;
+  background-color: #ddd;
+  margin-right: 2px;
+}
