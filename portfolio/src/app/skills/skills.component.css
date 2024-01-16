@@ -1,13 +1,15 @@
 .skills {
+  margin-top: 30px;
   justify-content: center;
+  display: flex;
+  overflow-x: scroll;
+  border-radius: 7px;
 }
 
 .items {
   display: flex;
-  overflow-x: auto;
-  max-width: 70%;
-  max-height: 700px;
-  border: 1px solid #ddd;
+  max-height: 900px;
+  border-radius: 7px;
   justify-content: space-evenly;
 }
 
@@ -16,16 +18,22 @@
 }
 
 .items img {
-  max-height: 70%;
-  max-width: 70%;
+  max-height: 60%;
+  max-width: 60%;
   border-radius: 50%;
+  margin-top: 20px;
 }
 
 .items .item {
-  min-width: 210px;
-  height: 400px;
-  line-height: 110px;
+  min-width: 400px;
+  height: 600px;
+  line-height: 50px;
   text-align: center;
-  background-color: #ddd;
-  margin-right: 2px;
+  background-color: white;
+  margin-right: 5px;
+  border-radius: 7px;
+}
+
+.items .phrase {
+  margin: 25px;
 }
