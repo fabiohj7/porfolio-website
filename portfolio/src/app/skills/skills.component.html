@@ -1,15 +1,4 @@
 <div class="skills">
-  <div class="items" #itemsContainer>
-    <div class="item" *ngFor="let skill of skills">
-      <div class="image-container">
-        <img [src]="skill.image" [alt]="skill.alt" />
-      </div>
-      <div class="phrase">
-        {{ skill.description }}
-      </div>
-    </div>
-  </div>
-
   <button
     class="nav-button prev-button"
     (click)="scrollLeft()"
@@ -17,6 +6,18 @@
   >
     ←
   </button>
+  <div class="items" #itemsContainer>
+    <div class="item" *ngFor="let skill of skills">
+      <div class="image-container">
+        <img [src]="skill.image" [alt]="skill.alt" />
+      </div>
+      <div class="phrase">
+        <h2>{{ skill.header }}</h2>
+        {{ skill.description }}
+      </div>
+    </div>
+  </div>
+
   <button
     class="nav-button next-button"
     (click)="scrollRight()"

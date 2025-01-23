@@ -3,6 +3,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 interface Skill {
   image: string;
   alt: string;
+  header: string;
   description: string;
 }
 
@@ -16,29 +17,35 @@ export class SkillsComponent {
 
   skills: Skill[] = [
     {
-      image: '../../assets/C++-Logo.svg',
+      image: '../../assets/python-logo.png',
+      alt: 'Python logo',
+      header: 'Python Language',
+      description: 'Learned Python in class',
+    },
+    {
+      image: '../../assets/C++-Logo.png',
       alt: 'C++ logo',
-      description: 'Learned C++ in class',
+      header: 'C++ Language',
+      description:
+        'In shool C++ was the first language that was taught, started with basics to later on doing competitive programming with C++.',
     },
     {
       image: '../../assets/C-logo.png',
       alt: 'C logo',
+      header: 'C Language',
       description: 'Learned C in class',
-    },
-    {
-      image: '../../assets/Linux-logo.jpeg',
-      alt: 'C++ logo',
-      description: 'Learned Linux in class',
     },
     {
       image: '../../assets/Java-logo.png',
       alt: 'Java logo',
+      header: 'Java Langauge',
       description: 'Learned Java in class',
     },
     {
-      image: '../../assets/python-logo.png',
-      alt: 'Python logo',
-      description: 'Learned Python in class',
+      image: '../../assets/Linux-logo.png',
+      alt: 'Linux logo',
+      header: 'Linux OS',
+      description: 'Learned Linux in class',
     },
   ];
 

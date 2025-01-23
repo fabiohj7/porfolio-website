@@ -1,0 +1,14 @@
+.about {
+  color: white;
+  align-content: center;
+  justify-items: center;
+}
+
+.about h1 {
+  text-align: center;
+}
+
+.about p {
+  max-width: 60%;
+  text-align: left;
+}

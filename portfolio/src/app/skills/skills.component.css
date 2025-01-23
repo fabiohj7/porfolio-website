@@ -1,7 +1,10 @@
 .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1000px;
   margin: 10px auto;
   padding: 0 60px;
 }
@@ -10,11 +13,9 @@
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
+  gap: 20px; /* Gap betwwen cards */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
   scrollbar-width: none;
-  gap: 20px;
-  padding: 20px 0;
-  scroll-behavior: smooth;
 }
 
 .items::-webkit-scrollbar {
@@ -22,51 +23,56 @@
 }
 
 .item {
+  scroll-snap-type: center;
   flex: 0 0 auto;
-  width: 340px;
-  min-height: 530px;
-  background-color: #0a0047;
+  max-width: 280px;
+  height: 265px;
+  background-color: #fff;
   border-radius: 15px;
-  padding: 20px;
-  scroll-snap-align: start;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  margin: 20px 10px;
+  padding: 20px 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
 }
 
 .items .item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  height: 420px;
 }
 
 .image-container {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 20px;
-  border: 3px solid #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 5);
 }
 
 .image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 10px;
-  background-color: white;
+  max-width: 100%;
+  border-radius: 4px;
 }
 
+/* transition allows each movement to be more smooth */
 .phrase {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
   text-align: center;
-  margin: 15px 0;
-  line-height: 1.5;
-  font-size: 0.95rem;
-  color: whitesmoke;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.items .item:hover .phrase {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
 }
 
 .nav-button {
@@ -88,7 +94,7 @@
 }
 
 .nav-button:hover {
-  background-color: #0f0f0f;
+  background-color: gray;
   transform: translateY(-50%) scale(1.1);
 }
 
