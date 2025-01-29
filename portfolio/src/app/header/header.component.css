@@ -11,8 +11,8 @@ a {
 header {
   position: relative;
   width: 100%;
-  height: 70px;
-  background: #0a100d;
+  height: 85px;
+  background: #090911;
   color: white;
   display: flex;
   align-items: center;
@@ -46,9 +46,9 @@ ul li {
 }
 
 ul li a:hover {
-  border-radius: 3px;
+  border-radius: 6px;
   background: #004687;
-  color: #0a0047;
+  color: white;
   padding: 5px 10px;
 }
 
@@ -76,24 +76,86 @@ ul li a {
   display: none;
 }
 
+/* @media (max-width: 775px) { */
+/*   .navbar { */
+/*     position: relative; */
+/*     width: 60%; */
+/*     display: none; */
+/*   } */
+/**/
+/*   #menuIcon { */
+/*     display: inline; */
+/*     position: fixed; */
+/*     font-size: 15px; */
+/*     margin-left: 85%; */
+/*     z-index: 222; */
+/*     float: right; */
+/*     padding: 1%; */
+/*     border-radius: 4px; */
+/*     cursor: pointer; */
+/*     border: 1px solid white; */
+/*   } */
+/**/
+/*   .navbar.active { */
+/*     display: block; */
+/*   } */
+/**/
+/*   .navbar ul { */
+/*     position: fixed; */
+/*     width: 100%; */
+/*     height: 100vh; */
+/*     background-color: black; */
+/*   } */
+/**/
+/*   .navbar ul li { */
+/*     display: block; */
+/*     margin-top: 20px; */
+/*     width: 100%; */
+/*     height: 40px; */
+/*     text-align: left; */
+/*     position: relative; */
+/*     top: 50px; */
+/*     padding: 2%; */
+/*   } */
+/**/
+/*   ul li:hover { */
+/*     background: #004687; */
+/*   } */
+/**/
+/*   ul li a { */
+/*     margin-left: 40px; */
+/*     font-weight: 600; */
+/*   } */
+/* } */
+
+/*GPT version*/
+
 @media (max-width: 775px) {
-  .navbar {
-    position: relative;
-    width: 60%;
-    display: none;
+  #menuIcon {
+    display: block;
+    position: absolute;
+    font-size: 25px;
+    right: 20px;
+    top: 22px;
+    cursor: pointer;
+    z-index: 10;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
   }
 
-  #menuIcon {
-    display: inline;
-    position: fixed;
-    font-size: 15px;
-    margin-left: 85%;
-    z-index: 222;
-    float: right;
-    padding: 1%;
-    border-radius: 4px;
-    cursor: pointer;
-    border: 1px solid white;
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Take the full viewport height */
+    background-color: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Space for the menu icon */
+    display: none; /* Initially hidden */
   }
 
   .navbar.active {
@@ -101,29 +163,35 @@ ul li a {
   }
 
   .navbar ul {
-    position: fixed;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center;
+    list-style: none;
     width: 100%;
-    height: 100vh;
-    background-color: black;
   }
 
   .navbar ul li {
+    width: 60%; /* Take full width of the navbar */
+    text-align: center;
+    margin: 15px 0; /* Space between links */
+  }
+
+  .navbar ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
     display: block;
-    margin-top: 20px;
-    width: 100%;
-    height: 40px;
-    text-align: left;
-    position: relative;
-    top: 50px;
-    padding: 2%;
   }
 
   ul li:hover {
-    background: #004687;
+    background: #004687; /* Highlight background on hover */
   }
 
-  ul li a {
-    margin-left: 40px;
-    font-weight: 600;
+  #resume {
+    color: #00ffd2;
+    border: 1px solid #00ffd2;
+    border-radius: 6px;
+    padding: 8px 15px;
   }
 }

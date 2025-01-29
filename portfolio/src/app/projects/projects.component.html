@@ -1,67 +1,23 @@
+<div class="title">
+  <h1>Projects</h1>
+  <div class="line"></div>
+</div>
+
 <div class="timeline">
-  <div class="container left-container">
-    <img src="../../assets/assuresoft_logo.jpeg" alt="Assuresoft Logo" />
+  <div
+    *ngFor="let item of timelineData"
+    [class]="
+      item.isLeft ? 'container left-container' : 'container right-container'
+    "
+    (click)="openDetails(item)"
+  >
+    <img [src]="item.imageSrc" [alt]="item.altText" />
     <div class="text-box">
-      <h2>Assuresoft</h2>
-      <small>2020 - 2022</small>
-      <p>
-        Developed an app as a group using agile methodologies. Worked on a
-        academid website meant to help the new hirees to get trained on the
-        technologies they would work on later on.
-      </p>
-      <span class="left-container-arrow"></span>
-    </div>
-  </div>
-  <div class="container right-container">
-    <img
-      src="../../assets/Cleveland_State_University_logo.png"
-      alt="Cleveland state Logo"
-    />
-    <div class="text-box">
-      <h2>Assuresoft</h2>
-      <small>2020 - 2022</small>
-      <p>Developed an app as a group using agile methodologies.</p>
-      <span class="right-container-arrow"></span>
-    </div>
-  </div>
-  <div class="container left-container">
-    <div class="text-box">
-      <h2>Assuresoft</h2>
-      <small>2020 - 2022</small>
-      <p>Developed an app as a group using agile methodologies.</p>
-      <span class="left-container-arrow"></span>
-    </div>
-  </div>
-  <div class="container right-container">
-    <div class="text-box">
-      <h2>Assuresoft</h2>
-      <small>2020 - 2022</small>
-      <p>Developed an app as a group using agile methodologies.</p>
-      <span class="right-container-arrow"></span>
-    </div>
-  </div>
-  <div class="container left-container">
-    <div class="text-box">
-      <h2>Assuresoft</h2>
-      <small>2020 - 2022</small>
-      <p>Developed an app as a group using agile methodologies.</p>
-      <span class="left-container-arrow"></span>
-    </div>
-  </div>
-  <div class="container right-container">
-    <div class="text-box">
-      <h2>Assuresoft</h2>
-      <small>2020 - 2022</small>
-      <p>Developed an app as a group using agile methodologies.</p>
-      <span class="right-container-arrow"></span>
-    </div>
-  </div>
-  <div class="container left-container">
-    <div class="text-box">
-      <h2>Assuresoft</h2>
-      <small>2020 - 2022</small>
-      <p>Developed an app as a group using agile methodologies.</p>
-      <span class="left-container-arrow"></span>
+      <h2>{{ item.title }}</h2>
+      <small>{{ item.date }}</small>
+      <p>{{ item.description }}</p>
+      <span class="left-container-arrow" *ngIf="item.isLeft"></span>
+      <span class="right-container-arrow" *ngIf="!item.isLeft"></span>
     </div>
   </div>
 </div>

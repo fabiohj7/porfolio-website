@@ -1,3 +1,8 @@
+<div class="title">
+  <h1>Skills</h1>
+  <div class="line"></div>
+</div>
+
 <div class="skills">
   <button
     class="nav-button prev-button"
@@ -25,4 +30,18 @@
   >
     →
   </button>
+</div>
+
+<!-- Photo collage -->
+<div class="title">
+  <h1>Awards</h1>
+  <div class="line"></div>
+</div>
+<div class="image-collage">
+  <div class="image-wrapper" *ngFor="let item of images">
+    <img [src]="item.src" [alt]="item.alt" class="collage-image" />
+    <div class="hover-overlay">
+      <p>{{ item.info }}</p>
+    </div>
+  </div>
 </div>

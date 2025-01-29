@@ -1,3 +1,20 @@
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title h1 {
+  color: white;
+}
+
+.line {
+  width: 60%;
+  height: 2px;
+  background-color: #ccc;
+  border-radius: 2px;
+  margin: 20px auto;
+}
+
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -87,7 +104,7 @@
   left: 50%;
   margin-left: -3px;
   z-index: 0;
-  animation: height 6s linear;
+  animation: height 4s linear;
 }
 
 @keyframes height {
@@ -133,7 +150,7 @@
   left: -15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .timeline {
     margin: 50px auto;
   }

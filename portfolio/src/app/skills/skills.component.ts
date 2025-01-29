@@ -15,6 +15,19 @@ interface Skill {
 export class SkillsComponent {
   @ViewChild('itemsContainer') itemsContainer!: ElementRef;
 
+  // Image collage section
+  images = [
+    { src: '../../assets/tokyo.jpeg', alt: 'Image 1', info: 'Tokyo' },
+    { src: '../../assets/bolivia.jpeg', alt: 'Image 2', info: 'Tokyo' },
+    {
+      src: '../../assets/C-logo.png',
+      alt: 'Image 3',
+      info: 'C++ certification from CSU',
+    },
+    { src: '../../assets/tokyo.jpeg', alt: 'Image 4', info: 'Tokyo' },
+    { src: '../../assets/tokyo.jpeg', alt: 'Image 5', info: 'Tokyo' },
+  ];
+
   skills: Skill[] = [
     {
       image: '../../assets/python-logo.png',
