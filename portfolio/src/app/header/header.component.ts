@@ -11,4 +11,8 @@ export class HeaderComponent {
   toggle() {
     this.isNavActive = !this.isNavActive;
   }
+
+  closeMenu() {
+    this.isNavActive = false;
+  }
 }

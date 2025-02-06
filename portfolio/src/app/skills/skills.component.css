@@ -54,7 +54,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.items .item:hover {
+.items .item.active {
   height: 420px;
 }
 
@@ -85,7 +85,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.items .item:hover .phrase {
+.items .item.active .phrase {
   visibility: visible;
   opacity: 1;
   margin-top: -40px;
@@ -110,7 +110,7 @@
   transition: all 0.3s ease;
 }
 
-.nav-button:hover {
+.nav-button.active {
   background-color: gray;
   transform: translateY(-50%) scale(1.1);
 }
@@ -165,7 +165,7 @@
   transition: transform 0.3s ease; /* Smooth scaling on hover */
 }
 
-.image-wrapper:hover {
+.image-wrapper.active {
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
@@ -191,6 +191,6 @@
   transition: opacity 0.3s ease; /* Smooth fade-in effect */
 }
 
-.image-wrapper:hover .hover-overlay {
+.image-wrapper.active .hover-overlay {
   opacity: 1; /* Show overlay on hover */
 }

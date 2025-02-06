@@ -1,24 +1,24 @@
 <header>
   <div class="logo">
-    <h1><a href="/#">FHJ</a></h1>
+    <h1><a routerLink="/#">FHJ</a></h1>
   </div>
   <span class="fas fa-bars" id="menuIcon" (click)="toggle()"></span>
   <div class="navbar" [ngClass]="{ active: isNavActive }">
     <ul>
       <li>
-        <a href="#">Home</a>
+        <a routerLink="#" (click)="closeMenu()">Home</a>
       </li>
       <li>
-        <a href="/projects">Projects</a>
+        <a routerLink="/projects" (click)="closeMenu()">Projects</a>
       </li>
       <li>
-        <a href="/skills">Skills</a>
+        <a routerLink="/skills" (click)="closeMenu()">Skills</a>
       </li>
       <li>
-        <a href="/about">About</a>
+        <a routerLink="/about" (click)="closeMenu()">About</a>
       </li>
       <li>
-        <a href="#" id="resume">Resume</a>
+        <a routerLink="#" id="resume" (click)="closeMenu()">Resume</a>
       </li>
     </ul>
   </div>
