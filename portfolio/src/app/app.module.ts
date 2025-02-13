@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailDialogComponent } from './detail-dialog/detail-dialog.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DetailDialogComponent } from './detail-dialog/detail-dialog.component';
     ContactComponent,
     ProjectsComponent,
     DetailDialogComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -85,7 +85,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.items .item.active .phrase {
+.items .item:hover .phrase {
   visibility: visible;
   opacity: 1;
   margin-top: -40px;
@@ -125,7 +125,7 @@
 
 @media (max-width: 768px) {
   .skills {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   .item {
@@ -136,12 +136,28 @@
   .image-container {
     width: 100px;
     height: 100px;
+    top: -20px;
   }
 
   .nav-button {
     width: 32px;
     height: 32px;
-    font-size: 14px;
+    font-size: 15px;
+  }
+
+  .phrase {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition: none;
+  }
+
+  .items .item:hover .phrase {
+    transition: none !important;
+  }
+
+  .items .item.active {
+    height: 300px;
   }
 }
 

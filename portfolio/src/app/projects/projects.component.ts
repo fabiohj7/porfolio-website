@@ -53,7 +53,7 @@ export class ProjectsComponent {
         description:
           'Researched computer vision and AI and its real world applications.',
         imageSrc: '../../assets/Cleveland_State_University_logo.png',
-        imageUrl: '../../assets/assuresoft_logo.jpeg', // Image that goes inside the pop-up
+        imageUrl: '../../assets/IMG_9929.jpg',
         altText: 'Assuresoft Logo',
         popUp:
           "Worked with advanced technologies such as Artificial Intelligence (AI) and Image recognition. Utilizing devices like the RayBan meta glasses to leverage its capabilities. Research applications of different technologies such as Meta's detectron 2 and media pipe. ",
@@ -65,7 +65,7 @@ export class ProjectsComponent {
         date: 'April 2023 - July 2023',
         description: 'Developed an app as a group using agile methodologies.',
         imageSrc: '../../assets/Cleveland_State_University_logo.png',
-        imageUrl: '../../assets/cyberVR2.png', // Image that goes inside the pop-up
+        imageUrl: '../../assets/cyberVR2.png',
         altText: 'Assuresoft Logo',
         popUp:
           'Developed a cybersecurity training on VR platforms, preparing future employes for possible attacks they might encounter using very hands-on technology.',
