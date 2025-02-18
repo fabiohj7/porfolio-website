@@ -17,8 +17,16 @@ export class SkillsComponent {
 
   // Image collage section
   images = [
-    { src: '../../assets/tokyo.jpeg', alt: 'Image 1', info: 'Tokyo' },
-    { src: '../../assets/bolivia.jpeg', alt: 'Image 2', info: 'Tokyo' },
+    {
+      src: '../../assets/cpt_cert1.JPG',
+      alt: 'Image 1',
+      info: 'CPT of the Semester Spring 2024',
+    },
+    {
+      src: '../../assets/cpt_cert2.JPG',
+      alt: 'Image 2',
+      info: 'CPT of the Semester Fall 2024',
+    },
     {
       src: '../../assets/hack_gang_award.JPG',
       alt: 'Image 3',

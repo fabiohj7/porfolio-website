@@ -6,6 +6,11 @@
   background-color: #000c18;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .contact {
   width: 100%;
   text-align: center;
