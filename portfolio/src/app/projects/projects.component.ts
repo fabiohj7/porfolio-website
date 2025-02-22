@@ -41,7 +41,7 @@ export class ProjectsComponent {
         description: 'Developed an app as a group using agile methodologies.',
         imageSrc: '../../assets/Weston.png',
         imageUrl: '../../assets/weston_group.jpg', // Image that goes inside the pop-up
-        altText: 'Assuresoft Logo',
+        altText: 'Weston Logo',
         popUp:
           'Designed, built, and developed wearable technology leveraging different sensors, also utilizing a cross-platform application in Kotlin that interfaces with the wearable tech.',
         isLeft: true,
@@ -54,21 +54,47 @@ export class ProjectsComponent {
           'Researched computer vision and AI and its real world applications.',
         imageSrc: '../../assets/Cleveland_State_University_logo.png',
         imageUrl: '../../assets/IMG_9929.jpg',
-        altText: 'Assuresoft Logo',
+        altText: 'CSU Logo',
         popUp:
           "Worked with advanced technologies such as Artificial Intelligence (AI) and Image recognition. Utilizing devices like the RayBan meta glasses to leverage its capabilities. Research applications of different technologies such as Meta's detectron 2 and media pipe. ",
         isLeft: false,
         additionalInfo: 'Worked on academic website training new hires',
       },
       {
-        title: 'Research Assistant',
+        title: 'NASA Lunabotics',
+        date: 'October 2024 - May 2024',
+        description: "Developed autonomous rover for with CSU's robotics team",
+        imageSrc: '../../assets/Lunabotics.jpeg',
+        imageUrl: '../../assets/Lunabotics Robot.png',
+        altText: 'Nasa Lunabotics logo',
+        popUp:
+          'As the president of the robotics team I led a team of software, mechanical, and electrical for the development of an autonomous rover capable of digging. Utilizig ROS and arduinos to control the rover.',
+        isLeft: true,
+        additionalInfo: 'Worked on academic website training new hires',
+      },
+      {
+        title: 'Cybersecurity VR Dev. Research',
         date: 'April 2023 - July 2023',
-        description: 'Developed an app as a group using agile methodologies.',
+        description:
+          'Developed Cybersecurity training in Virtual Reality using Unity.',
         imageSrc: '../../assets/Cleveland_State_University_logo.png',
         imageUrl: '../../assets/cyberVR2.png',
-        altText: 'Assuresoft Logo',
+        altText: 'CSU Logo',
         popUp:
           'Developed a cybersecurity training on VR platforms, preparing future employes for possible attacks they might encounter using very hands-on technology.',
+        isLeft: false,
+        additionalInfo: 'Worked on academic website training new hires',
+      },
+      {
+        title: 'Sign Language Translating Glove',
+        date: 'January 2024 - May 2024',
+        description:
+          'Built and developed wearable tech that translates sign language into speech.',
+        imageSrc: '../../assets/Cleveland_State_University_logo.png',
+        imageUrl: '../../assets/sign_language.jpg',
+        altText: 'CSU Logo',
+        popUp:
+          "The sign language translating glove uses flex sensors and a IMU to get the data from a glove and send it through bluetooth to an android app. It then uses a machine learning algorithm to translate everything into speech using the phone' speackers.",
         isLeft: true,
         additionalInfo: 'Worked on academic website training new hires',
       },
