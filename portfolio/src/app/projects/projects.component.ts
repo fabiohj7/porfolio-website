@@ -29,7 +29,7 @@ export class ProjectsComponent {
         description:
           'Conducted 1-on-1 sessions for programming student as well as organizing events such as game jams and workshops.',
         imageSrc: '../../assets/cpt_logo_220x220.png',
-        imageUrl: '../../assets/assuresoft_logo.jpeg', // Image that goes inside the pop-up
+        imageUrl: '../../assets/cpt_image.jpg', // Image that goes inside the pop-up
         altText: 'Assuresoft Logo',
         popUp:
           'Intructed on problem solving, debugging, and syntax skills, Conducted 1-on-1 tutoring sessions with students for programming classes. Demonstrated strong leadership and communication skills in organizing software development.',

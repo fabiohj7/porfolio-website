@@ -3,33 +3,40 @@
   <div class="line"></div>
 </div>
 
-<div class="skills">
-  <button
-    class="nav-button prev-button"
-    (click)="scrollLeft()"
-    *ngIf="isScrollable()"
-  >
-    ←
+<div class="filter-buttons">
+  <button *ngFor="let category of categories" (click)="filterSkills(category)">
+    {{ category }}
   </button>
-  <div class="items" #itemsContainer>
-    <div class="item" *ngFor="let skill of skills">
-      <div class="image-container">
-        <img [src]="skill.image" [alt]="skill.alt" />
-      </div>
-      <div class="phrase">
-        <h2>{{ skill.header }}</h2>
-        {{ skill.description }}
-      </div>
+</div>
+
+<!-- Skills grid -->
+<div class="skills-list">
+  <div
+    *ngFor="let skill of filteredSkills"
+    class="skill-item"
+    (click)="openModal(skill)"
+  >
+    <span>{{ skill.name }}</span>
+  </div>
+</div>
+
+<!-- Modal -->
+
+<div class="modal-backdrop" *ngIf="selectedSkill" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <span class="circle red"></span>
+      <span class="circle yellow"></span>
+      <span class="circle green"></span>
+    </div>
+    <div class="modal-body">
+      <pre>
+$ cat {{ selectedSkill.name }}.txt
+
+{{ selectedSkill.description }}
+      </pre>
     </div>
   </div>
-
-  <button
-    class="nav-button next-button"
-    (click)="scrollRight()"
-    *ngIf="isScrollable()"
-  >
-    →
-  </button>
 </div>
 
 <!-- Photo collage -->

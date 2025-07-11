@@ -20,9 +20,9 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
+              "@fortawesome/fontawesome-free/css/all.min.css",
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -55,6 +55,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "portfolio:build"
+          },
           "configurations": {
             "production": {
               "browserTarget": "portfolio:build:production"
