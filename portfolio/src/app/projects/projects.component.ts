@@ -9,6 +9,7 @@ import { DetailDialogComponent } from '../detail-dialog/detail-dialog.component'
 })
 export class ProjectsComponent {
   timelineData: any[] = [];
+  // All images use a size of 1200px x 1200px
   ngOnInit() {
     this.timelineData = [
       {
@@ -17,7 +18,7 @@ export class ProjectsComponent {
         description:
           'Collaborated in a team in the development of a web application to monitor training of new developers.',
         imageSrc: '../../assets/assuresoft_logo.jpeg',
-        imageUrl: '../../assets/assuresoft_logo.jpeg', // Image that goes inside the pop-up
+        imageUrl: '../../assets/assuresoft.png', // Image that goes inside the pop-up
         altText: 'Assuresoft Logo',
         popUp:
           'Working with agile technologies I had to collaborate using the Angular framework and git for our source control software. This work was a full stack development with the use of Postgres SQL for our backend.', // Description inside the pop-up
@@ -108,8 +109,8 @@ export class ProjectsComponent {
         imageUrl: item.imageUrl,
         popUp: item.popUp,
       },
-      maxHeight: '85vw',
-      maxWidth: '60vw',
+      maxHeight: '105vw',
+      maxWidth: '88vw',
     });
   }
 
