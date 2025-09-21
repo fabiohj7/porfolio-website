@@ -4,17 +4,17 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-axion',
-  templateUrl: './ace.component.html',
-  styleUrls: ['./ace.component.css'],
+  templateUrl: './deadbyport.component.html',
+  styleUrls: ['./deadbyport.component.css'],
 })
-export class AceComponent {
+export class DeadbyportComponent {
   content = '';
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
     this.http
-      .get('../../assets/ace_of_fades.md', { responseType: 'text' })
+      .get('../../assets/deadbyport.md', { responseType: 'text' })
       .subscribe(async (markdown) => {
         this.content = await marked.parse(markdown);
       });

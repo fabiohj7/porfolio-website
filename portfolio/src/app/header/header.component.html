@@ -6,7 +6,7 @@
   <div class="navbar" [ngClass]="{ active: isNavActive }">
     <ul>
       <li>
-        <a routerLink="#" (click)="closeMenu()">Home</a>
+        <a routerLink="/" (click)="closeMenu()">Home</a>
       </li>
       <li>
         <a routerLink="/projects" (click)="closeMenu()">Projects</a>
@@ -15,8 +15,11 @@
         <a routerLink="/skills" (click)="closeMenu()">Skills</a>
       </li>
       <li>
+        <a routerLink="/blog" (click)="closeMenu()">Blog</a>
+      </li>
+      <li>
         <a
-          routerLink="../../assets/Fabio Hinojosa CV Original.pdf"
+          href="../../assets/Fabio Hinojosa CV Original.pdf"
           target="_blank"
           id="resume"
           (click)="closeMenu()"

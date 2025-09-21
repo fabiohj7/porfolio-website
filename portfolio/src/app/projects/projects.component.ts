@@ -17,7 +17,7 @@ export class ProjectsComponent {
         description:
           'Collaborated in a team in the development of a web application to monitor training of new developers.',
         imageSrc: '../../assets/assuresoft_logo.jpeg',
-        imageUrl: '../../assets/maxresdefault.jpg', // Image that goes inside the pop-up
+        imageUrl: '../../assets/assuresoft_logo.jpeg', // Image that goes inside the pop-up
         altText: 'Assuresoft Logo',
         popUp:
           'Working with agile technologies I had to collaborate using the Angular framework and git for our source control software. This work was a full stack development with the use of Postgres SQL for our backend.', // Description inside the pop-up

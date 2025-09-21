@@ -110,6 +110,24 @@ export class SkillsComponent {
       description:
         'Using hashcat to crack password hashes, used mostly for events like CTF competitions.',
     },
+    {
+      name: 'ffuf',
+      category: 'Cybersecurity',
+      description:
+        'Completed a hack the box module on ffuf for web penetration testing.',
+    },
+    {
+      name: 'React',
+      category: 'Frameworks',
+      description:
+        'When my web-dev development started to grow, I found myself learning and working in react a lot more.',
+    },
+    {
+      name: 'PostgreSQL',
+      category: 'Frameworks',
+      description:
+        'In my first big automation project I had to learn how to use a database that will allow me to create a realiable source of data storage.',
+    },
   ];
 
   /* Image collage */

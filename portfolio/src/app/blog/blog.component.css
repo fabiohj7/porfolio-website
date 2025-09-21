@@ -1,0 +1,74 @@
+.title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.title h1 {
+  color: white;
+}
+
+.line {
+  width: 60%;
+  height: 2px;
+  background-color: #ccc;
+  border-radius: 2px;
+  margin: 20px auto;
+}
+
+/*Carousel*/
+
+owl-carousel-o {
+  display: block;
+  margin: 3rem auto;
+  width: 80%;
+}
+
+.card {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.2s ease-in-out;
+  aspect-ratio: 3/4;
+  max-width: 400px;
+  min-height: 500px;
+}
+.card:hover {
+  transform: scale(0.98);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.card-img {
+  flex: 0 0 80%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  padding: 1rem;
+}
+.card-content h3 {
+  margin: 0 0 0.5rem 0;
+}
+.card-content p {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
+    min-height: 400px;
+    aspect-ratio: auto; /* Allows taller cards on phones */
+  }
+  .card-content h3 {
+    margin-top: 15px;
+  }
+  .card-content p {
+    margin: 10px 0;
+  }
+}

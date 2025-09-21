@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatDialogModule } from '@angular/material/dialog';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +16,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailDialogComponent } from './detail-dialog/detail-dialog.component';
 import { FooterComponent } from './footer/footer.component';
+import { BlogComponent } from './blog/blog.component';
+import { AxionComponent } from './axion/axion.component';
+import { AceComponent } from './ace/ace.component';
+import { DeadbyportComponent } from './deadbyport/deadbyport.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +32,10 @@ import { FooterComponent } from './footer/footer.component';
     ProjectsComponent,
     DetailDialogComponent,
     FooterComponent,
+    BlogComponent,
+    AxionComponent,
+    AceComponent,
+    DeadbyportComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +43,8 @@ import { FooterComponent } from './footer/footer.component';
     RouterModule,
     BrowserAnimationsModule,
     MatDialogModule,
+    CarouselModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
