@@ -1,7 +1,7 @@
 # Axion Labs Case Study
 
 **Industry:** Metal Manufacturing  
-**Client:** Axion Labs, owned and operated by Bryan Lahoud
+**Client:** Axion Labs, owned and operated by Brian Lahoud
 
 ---
 
@@ -13,7 +13,7 @@ Axion Labs specializes in precision metal manufacturing for a wide range of cont
 
 ## The Challenge
 
-Bryan Lahoud and his team were spending significant time reviewing every job offer manually. Each proposal required checking:
+Brian Lahoud and his team were spending significant time reviewing every job offer manually. Each proposal required checking:
 
 - The relevant metal certifications.
 - Current metal pricing and cost feasibility.
